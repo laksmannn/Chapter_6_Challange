@@ -2,6 +2,7 @@ const express = require("express")
 const { getAllUser, getSingleUser, creatUser, editUser, deleteUser } = require("./userController")
 
 const app = express()
+app.use(express.json());
 
 app.get("/", (req, res) => res.send ("hello world"))
 
@@ -13,7 +14,7 @@ app.post("/user", creatUser)
 
 app.put("/user/:id", editUser)
 
-app.delelte("/user/:id", deleteUser)
+app.delete("/user/:id", deleteUser)
 
 
 app.listen(3000, () => {
