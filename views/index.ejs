@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/styleindex.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Ini Document test</h1>
-    <a href="login">
-      <button style="background-color: red">Log out</button>
-    </a>
+    <h1>Data Users</h1>
 
     <a href="user/create">
-      <button style="background-color: green">Create User +</button>
+      <button style="margin-bottom: 1%">Create User</button>
     </a>
     <table>
       <tr>
@@ -38,6 +35,9 @@
       <% }); %>
       <!-- end of ulang-ulang -->
     </table>
+    <a href="login">
+      <button style="margin-top: 1%">Log out</button>
+    </a>
   </body>
   <script>
     const buttons = document.querySelectorAll(".delete-button");
